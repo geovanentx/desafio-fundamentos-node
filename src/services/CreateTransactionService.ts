@@ -8,8 +8,8 @@ class CreateTransactionService {
     this.transactionsRepository = transactionsRepository;
   }
 
-  public execute(): Transaction {
-    // TODO
+  public execute(request: any): Transaction {
+    return this.transactionsRepository.create(request);
   }
 }
 
